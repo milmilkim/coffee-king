@@ -14,7 +14,7 @@
 import image from '~/assets/images/scanner.png';
 import Scanner from '~/components/scanner.vue';
 
-const isShowScannerModal = ref(true);
+const isShowScannerModal = ref(false);
 
 const onClickScanner = () => {
   isShowScannerModal.value = true;
