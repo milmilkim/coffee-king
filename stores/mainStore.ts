@@ -7,7 +7,11 @@ export const useMainStore = defineStore('mainStore', () => {
     step.value = String(newStep);
   };
 
+  const removeStep = () => {
+    step.value = null;
+  };
+
   const currentStep = computed(() => Number(step.value));
 
-  return { setStep, currentStep };
+  return { setStep, currentStep, removeStep };
 });
