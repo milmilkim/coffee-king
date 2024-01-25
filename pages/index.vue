@@ -1,6 +1,6 @@
 <template>
-    <Main v-if="store.currentStep && store.currentStep < 5"  />
-	<Last v-else-if="store.currentStep >= 5" />
+    <Main v-if="store.currentStep && store.currentStep <= 5"  />
+	<Last v-else-if="store.currentStep > 5" />
     <secret v-if="!store.currentStep"/>
 </template>
 
