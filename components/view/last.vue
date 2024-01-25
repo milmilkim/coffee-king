@@ -4,7 +4,7 @@
   <p class="text-white w-full text-center">
     Thank you for playing <br />
     <button @click="removeMemory" class="bg-black m-2 p-2">
-      기억을 지우기
+      기억을 지우기...
     </button>
   </p>
 </template>
