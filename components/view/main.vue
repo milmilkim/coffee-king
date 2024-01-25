@@ -22,17 +22,18 @@
         전설의 커피콩을 모두 모아 여정을 완료하세요.
       </template>
       <template v-else
-        >모든 커피콩을 손에 넣었습니다! 열쇠를 변환하여 입력하세요.</template
+        >모든 커피콩을 손에 넣었습니다! 열쇠를 변환하여 입력하세요. <br />
+        <input
+          v-model="lastKey"
+          class="m-3 p-3 text-black"
+          type="text"
+          placeholder="비밀번호를 입력하세요." />
+        <button
+          @click.prevent="onSubmitLastKey"
+          class="bg-gray-100 p-3 text-black">
+          전송
+        </button></template
       >
-
-      <input
-        v-model="lastKey"
-        class="m-3 p-3 text-black"
-        type="text"
-        placeholder="비밀번호를 입력하세요." />
-      <button @click.prevent="onSubmitLastKey" class="bg-gray-100 p-3 text-black">
-        전송
-      </button>
     </p>
   </div>
   <Scanner v-if="isShowScannerModal" @scan="scanQr" @close="close" />

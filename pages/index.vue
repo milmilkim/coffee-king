@@ -1,7 +1,7 @@
 <template>
     <Main v-if="store.currentStep && store.currentStep < 5"  />
 	<Last v-else-if="store.currentStep >= 5" />
-    <secret v-else />
+    <secret v-if="!store.currentStep"/>
 </template>
 
 <script setup lang="ts">
