@@ -11,12 +11,19 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.10.4",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/nodemailer": "^6.4.14",
     "nuxt": "^3.9.1",
     "vue": "^3.4.10",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.5.1",
     "@vueuse/motion": "^2.0.0",
+    "axios": "^1.6.6",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.8",
+    "pinia": "^2.1.7",
     "vue-qrcode-reader": "^5.5.1"
   }
 }

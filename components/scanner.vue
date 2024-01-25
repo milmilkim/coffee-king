@@ -25,7 +25,7 @@ const checkCameraPermission = async () => {
   try {
     await navigator.mediaDevices.getUserMedia({ video: true });
   } catch (error) {
-    alert('카메라 권한을 주세요');
+    alert('카메라 권한을 주세요. 문제가 지속될시 다른 브라우저를 사용해주세요.');
     closeModal();
   }
 };
@@ -54,7 +54,6 @@ onMounted(() => {
   checkCameraPermission();
 });
 const onDetect = (detectedCode: any[]) => {
-  alert('스캔 완료');
   emits('scan', detectedCode[0].rawValue);
 };
 </script>
